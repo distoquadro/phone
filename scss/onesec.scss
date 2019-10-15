@@ -1,0 +1,236 @@
+.feature-one{
+	.title-feature{
+		margin-bottom: 60px;
+		h2{
+			text-align: center;
+			font:30px Oswald,sans-serif;
+			color: #161e26;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin:0;
+		}	
+	}
+	.feature-bg{
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		margin-bottom: 57px;
+		
+	}
+	.block-first{
+		width: 226px;
+		img{
+		transform: translate(-100px, 94px);
+		background: url(../img/Ellipse_1.png);
+		background-size: 100% 100%;
+		padding: 15px;
+		}
+		p{
+			font:14px Roboto,sans-serif;
+			font-weight: 400;
+			text-align: start;
+			margin:0;
+			margin-top:31px;
+			color: #6c8784;
+		}
+		h3{
+			position: relative;
+			color: #161e26;
+			font:18px Roboto,sans-serif;
+			font-weight: 400;
+			text-align: start;
+			margin:0;
+		}
+		h3::before{
+			content: url(../img/icon/line.png);
+			position: absolute;
+			top:7px;
+		
+		}		
+	}
+	.last-block{
+		width: 226px;
+		img{
+		transform: translate(247px, 94px);
+		background: url(../img/Ellipse_1.png);
+		background-size: 100% 100%;
+		padding: 15px;
+		}
+		p{
+			font:14px Roboto,sans-serif;
+			font-weight: 400;
+			text-align: end;
+			margin:0;
+			margin-top:31px;
+			color: #6c8784;
+		}
+		h3{
+			position: relative;
+			color: #161e26;
+			font:18px Roboto,sans-serif;
+			font-weight: 400;
+			text-align: end;
+			margin:0;
+		}
+		.ready-modules h3::after{
+			content: url(../img/icon/line.png);
+			position: absolute;
+			top:7px;
+			right: 0;
+		
+		}
+		.unlimited-color h3::before{
+			content: url(../img/icon/line.png);
+			position: absolute;
+			top:7px;
+			right: 0;
+		
+		}
+	
+		
+	}
+	.img-feature{
+		margin:0 80px;
+	}
+
+}
+@media(max-width:1115px){
+	.feature-one {
+		.feature-bg{
+			align-items: center;
+			flex-direction: column;
+		}
+		.img-feature{
+			margin-left:0;
+			margin-right: 0;
+			
+		}
+		.resp-design,
+		.power-settings,
+		.img-feature,
+		.unlimited-color{ 
+		margin-bottom: 40px;
+		transition: 0.3s margin-bottom linear;
+	}
+		.block-first {
+			width: 328px;
+		}
+		.block-first img {
+			transform: translate(128px, -3px);
+		}
+		.block-first h3{
+			font-size: 24px;
+			transition: 0.3s linear;
+			text-align: center;
+		}
+		.block-first p{
+			font-size:19px;
+			text-align: center;
+			transition: 0.3s linear;
+		}
+		.last-block {
+			width: 328px;
+			.unlimited-color h3::before{
+				right:72px;
+				transition: 0.3s linear;
+			}
+			.ready-modules h3::after {
+				right: 36px;
+				transition: 0.3s linear;
+			}
+		}
+		.last-block img {
+			transform: translate(134px, -3px);
+		}
+		.last-block  h3{
+			font-size: 24px;
+			text-align: center;
+			transition: 0.3s linear;
+		}
+		.last-block  p{
+			font-size:19px;
+			text-align: center;
+			transition: 0.3s linear;
+		}
+	}
+	
+}
+.music-section{
+	background: url(../img/blue-swoop-dots-slider-background_copy.png) no-repeat;
+	background-size: 100% 100%;
+	.music{
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+		align-items: center;
+		justify-content: center;
+		margin:82px 0;
+	}
+	.music-info{
+		width: 54%;
+		margin-left:49px;
+		span,
+		p{
+			color: #ffffff;
+			font:14px Lato,sans-serif;
+			font-weight: 400;
+			margin: 0;
+			
+		}
+		h3{
+			font:30px Lato,sans-serif;
+			font-weight: 400;
+			color: #ffffff;
+			margin:30px 0;
+			position: relative;
+		}
+		.american{
+			font-weight: 900;
+		}
+		h3::before{
+			content: url(../img/icon/line_2.png);
+			position: absolute;
+			top:7px;
+			
+		}
+	}
+}
+@media(max-width:1123px){
+	.music-section {
+		.music{
+			flex-direction: column-reverse;
+		}
+		.music-info{
+			width: 70%;
+			margin-left: 0;
+			margin-bottom: 40px;
+			text-align: center;
+			transition: 0.3s margin-bottom linear;
+		}	
+	}
+		
+}
+@media(max-width:775px){
+	.music-section {
+		.music-info{
+			h3 {
+				font-size: 25px;
+				transition: 0.3s linear;
+			}
+			p,
+			.american{
+				font-size:12px;
+				transition: 0.3s linear;
+			}
+		}  
+
+	}
+}
+@media(max-width:500px){
+	.music-section{
+		.music-info{
+			width: 100%;
+			transition: 0.3s linear;
+		}
+	} 
+}

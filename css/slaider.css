@@ -1,0 +1,231 @@
+.slaider-card {
+  background-color: #eeeeee; }
+  .slaider-card h2 {
+    color: #161e26;
+    font: 30px Oswald,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 51px 0 59px 0; }
+
+.card-first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: teal url(../img/back.png);
+  background-blend-mode: multiply;
+  background-color: #164e9b94;
+  box-shadow: 0 5px 6px 5px rgba(0, 0, 0, 0.24);
+  background-size: cover;
+  width: 771px;
+  margin: auto; }
+  .card-first .card {
+    margin-right: 36px;
+    margin-left: 45px; }
+  .card-first .right-bg {
+    z-index: -1;
+    transform: translate(6px, 45px); }
+  .card-first .left-bg {
+    z-index: -1;
+    transform: translate(-6px, 45px); }
+  .card-first .info-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 104px; }
+    .card-first .info-sec p {
+      width: 466px;
+      color: #ffffff;
+      font: 14px Lato,sans-serif;
+      font-weight: 400;
+      text-align: center;
+      margin: 101px 0 45px 0;
+      position: relative; }
+    .card-first .info-sec p::before {
+      content: url(../img/icon/slaid.png);
+      position: absolute;
+      top: -72px;
+      left: -31px; }
+    .card-first .info-sec .doe,
+    .card-first .info-sec .italic {
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      position: relative; }
+    .card-first .info-sec .doe::before {
+      content: url(../img/icon/line-sl.png);
+      position: absolute;
+      top: 5px;
+      left: 10px; }
+    .card-first .info-sec .italic {
+      font-style: italic;
+      font-weight: 400;
+      margin-top: 22px;
+      margin-bottom: 19px; }
+
+.owl-carousel {
+  margin-bottom: 59px; }
+
+.owl-carousel.owl-carousel .owl-item img {
+  width: auto; }
+
+.owl-theme.owl-theme .owl-dots .owl-dot span {
+  border: 2px solid #293d85;
+  width: 17px;
+  height: 17px;
+  background: #eeeeee; }
+
+.owl-theme.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #293d85; }
+
+.owl-theme.owl-theme .owl-dots .owl-dot {
+  outline: 0; }
+
+.owl-theme.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 34px; }
+
+@media (max-width: 897px) {
+  .card-first.card-first.card-first {
+    flex-direction: column;
+    width: 100%; }
+    .card-first.card-first.card-first .right-bg,
+    .card-first.card-first.card-first .left-bg {
+      display: none; }
+    .card-first.card-first.card-first .info-sec {
+      margin: 0;
+      transition: 0.3s margin linear; }
+      .card-first.card-first.card-first .info-sec p {
+        margin-top: 20px;
+        transition: 0.3s margin-top linear; }
+  .owl-carousel.owl-carousel .owl-item img {
+    margin: 30px 0 0 0; }
+  .card-first .info-sec p::before {
+    content: none; } }
+
+@media (max-width: 525px) {
+  .card-first.card-first.card-first .info-sec p {
+    width: 253px;
+    transition: 0.3s linear; } }
+
+.title-develop h2 {
+  color: #161e26;
+  font: 30px Oswald,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 57px 0 62px 0; }
+
+.develpo-team {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+  .develpo-team .seo,
+  .develpo-team .marketing,
+  .develpo-team .senior-dev {
+    margin-right: 20px;
+    width: 271px; }
+    .develpo-team .seo ul,
+    .develpo-team .marketing ul,
+    .develpo-team .senior-dev ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-top: 10px; }
+      .develpo-team .seo ul li,
+      .develpo-team .marketing ul li,
+      .develpo-team .senior-dev ul li {
+        width: 29px;
+        height: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-right: 10px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(22, 30, 38, 0.25);
+        transition: 0.3s linear; }
+        .develpo-team .seo ul li a,
+        .develpo-team .marketing ul li a,
+        .develpo-team .senior-dev ul li a {
+          text-decoration: none;
+          color: #161e26;
+          font: 13px Open-Sans,sans-serif;
+          font-weight: 400; }
+      .develpo-team .seo ul li:hover,
+      .develpo-team .marketing ul li:hover,
+      .develpo-team .senior-dev ul li:hover {
+        background: #0031715e; }
+      .develpo-team .seo ul li:last-child,
+      .develpo-team .marketing ul li:last-child,
+      .develpo-team .senior-dev ul li:last-child {
+        margin-right: 0; }
+  .develpo-team .senior-dev {
+    margin-right: 0; }
+  .develpo-team h3 {
+    font: 18px Roboto,sans-serif;
+    font-weight: 400;
+    position: relative; }
+  .develpo-team h3::after {
+    content: url(../img/line-dev.png);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px; }
+  .develpo-team span {
+    font: 14px Roboto,sans-serif;
+    font-weight: 400;
+    color: #6c8784; }
+
+@media (max-width: 842px) {
+  .develpo-team .marketing {
+    margin-right: 0;
+    transition: 0.3s margin-right linear; } }
+
+@media (max-width: 571px) {
+  .develpo-team .seo {
+    margin-right: 0;
+    transition: 0.3s margin-right linear; }
+  .develpo-team .senior-dev {
+    margin-bottom: 20px;
+    transition: 0.3s margin-bottom linear; } }
+
+.all-partners {
+  background-color: #eeeeee; }
+
+.title-partners h2 {
+  color: #161e26;
+  font: 30px Oswald,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 57px 0 62px 0; }
+
+.partners {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 60px; }
+
+@media (max-width: 797px) {
+  .partners .naps {
+    margin-top: 50px;
+    transition: 0.3s margin-top linear; } }
+
+@media (max-width: 627px) {
+  .partners .music {
+    margin-top: 50px;
+    transition: 0.3s margin-top linear; } }
+
+@media (max-width: 423px) {
+  .partners .tidal {
+    margin-top: 50px;
+    transition: 0.3s margin-top linear; }
+  .partners .spotify {
+    margin-top: 0; } }
+
+/*# sourceMappingURL=slaider.css.map */
